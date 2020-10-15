@@ -5,7 +5,7 @@ function start () {
   backgroundCards.forEach((element, index) => {
     setTimeout(() => element.classList.add('animate'), 1200 + index * 200)
 
-    setTimeout(() => element.classList.add('wiggle'), 3200)
+    setTimeout(() => element.classList.add('wiggle'), 3200 + index * 400)
   })
 }
 
