@@ -76,17 +76,13 @@ a {
   z-index: -2;
 }
 
-.translate-md {
-  transform: translate(var(--background-x), var(--background-y));
-}
-
 .background-card {
   width: 500px;
-  height: 25%;
-  max-width: 80%;
-  min-height: 100px;
+  height: 28%;
+  max-width: 84%;
+  min-height: 140px;
 
-  transform: rotateX(90deg) translate(var(--background-x), var(--background-y));
+  transform: scaleX(1) rotateX(90deg) translate(var(--background-x), var(--background-y));
   transition: all 2s ease-in-out;
 
   position: absolute;
@@ -94,7 +90,7 @@ a {
 }
 
 .background-card.animate {
-  transform: skew(-10deg) rotateX(50deg) translate(var(--background-x), var(--background-y));
+  transform: scaleX(1) skew(-10deg) rotateX(50deg) translate(var(--background-x), var(--background-y));
 }
 
 .background-card.animate.wiggle {
@@ -103,10 +99,10 @@ a {
 
 @keyframes wiggle {
   from {
-    transform: skew(-10deg) rotateX(50deg) translate(var(--background-x), var(--background-y))
+    transform: scaleX(1) skew(-10deg) rotateX(50deg) translate(var(--background-x), var(--background-y));
   }
 
   to {
-    transform: skew(-14deg) rotateX(55deg) translate(var(--background-x), var(--background-y))
+    transform: scaleX(1.05) skew(-14deg) rotateX(55deg) translate(var(--background-x), var(--background-y));
   }
 }
