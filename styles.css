@@ -19,11 +19,6 @@ a {
   text-decoration: none;
 }
 
-.mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .full-width {
     width: 100%;
 }
@@ -42,6 +37,15 @@ a {
 
 .pt-md {
   padding-top: 16px
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bold {
+  font-weight: 600;
 }
 
 .max-heigth-100 {
@@ -84,7 +88,8 @@ a {
   width: 500px;
   height: 28%;
   max-width: 84%;
-  min-height: 140px;
+  min-height: 150px;
+  max-height: 350px;
 
   transform: scaleX(1) rotateX(90deg) translate(var(--background-x), var(--background-y));
   transition: all 2s ease-in-out;
@@ -99,6 +104,11 @@ a {
 
 .background-card.animate.wiggle {
   animation: 3s ease-in-out 1s infinite alternate wiggle
+}
+
+.primary-color {
+  color: #009688;
+  fill:  #009688;
 }
 
 @keyframes wiggle {
