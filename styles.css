@@ -36,6 +36,10 @@ a {
     padding: 16px
 }
 
+.pt-xs {
+  padding-top: 10px
+}
+
 .pt-md {
   padding-top: 16px
 }
